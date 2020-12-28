@@ -8,11 +8,11 @@ import { CocktailService } from '../cocktail.service';
   styleUrls: ['./cocktail-list.component.scss']
 })
 export class CocktailListComponent implements OnInit {
-  cocktails: Cocktail[];
+  cocktails : Cocktail[];
   constructor(public monService:CocktailService) { }
 
   ngOnInit(): void {
-    this.cocktails= this.monService.getCocktails();
+    this.cocktails = this.monService.getCocktails();
     console.log(this.cocktails);
   }
 }
